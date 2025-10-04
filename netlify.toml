@@ -4,10 +4,9 @@
   command = "npm ci && npm run build"
 
 [[redirects]]
-  # Replace the placeholder with your Render backend base URL AFTER backend deploy
-  # Example: https://stajcase-api.onrender.com
+
   from = "/api/*"
-  to = "https://RENDER_BACKEND_URL/:splat"
+  to = "https://productlist-case-study.onrender.com/:splat"
   status = 200
 
 

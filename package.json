@@ -1,0 +1,20 @@
+{
+  "name": "stajcase-monorepo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "install-all": "npm run install-backend && npm run install-frontend",
+    "start-backend":"node backend/src/index.js",
+    "start-frontend": "cd frontend/ProductListApplication && npm run dev",
+    "dev": "concurrently \"npm run start-backend\" \"npm run start-frontend\""
+
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "concurrently": "^9.2.1"
+  }
+}

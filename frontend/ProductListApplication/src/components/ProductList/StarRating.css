@@ -1,0 +1,47 @@
+.star-rating {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  
+  .stars {
+    display: flex;
+    gap: 2px;
+  }
+  
+  .star {
+    font-size: 16px;
+    line-height: 1;
+  }
+  
+  .star.full {
+    color: #FFD700;
+  }
+  
+  .star.half {
+    background: linear-gradient(90deg, #FFD700 50%, #E0E0E0 50%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  
+  .star.empty {
+    color: #E0E0E0;
+  }
+  
+.rating-value {
+    font-family: 'Avenir', -apple-system, BlinkMacSystemFont, sans-serif; /* Avenir Book */
+    font-size: 14px; /* Avenir Book 14 */
+    font-weight: 400;
+    color: #666;
+  }
+  
+  @media (max-width: 768px) {
+    .star {
+      font-size: 14px;
+    }
+  
+    .rating-value {
+      font-size: 12px;
+    }
+  }

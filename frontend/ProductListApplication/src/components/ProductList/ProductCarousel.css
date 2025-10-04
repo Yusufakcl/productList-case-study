@@ -1,0 +1,64 @@
+.carousel-container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    position: relative;
+    margin-bottom: 60px;
+  }
+  
+  .carousel-viewport {
+    overflow: hidden;
+    flex: 1;
+  }
+  
+  .carousel-track {
+    display: flex;
+    transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+    gap: 30px; 
+  }
+
+  
+  .carousel-scrollbar{
+    position: absolute;
+    left: 64px; 
+    right: 64px; 
+    bottom: -28px;
+    height: 8px;
+    border-radius: 8px;
+    background: rgba(0,0,0,0.08);
+    overflow: hidden;
+  }
+
+  .carousel-scrollbar-thumb{
+    height: 100%;
+    background: #bdbdbd;
+    border-radius: 8px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transition: left 0.45s ease, width 0.45s ease;
+    will-change: left, width;
+  }
+  
+  @media (max-width: 1024px) {
+    .carousel-track {
+      gap: 20px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .carousel-container {
+      gap: 12px;
+    }
+    
+    .carousel-track {
+      gap: 14px;
+    }
+
+    .carousel-scrollbar{
+      left: 56px;
+      right: 56px;
+      bottom: -20px;
+      height: 6px;
+    }
+  }

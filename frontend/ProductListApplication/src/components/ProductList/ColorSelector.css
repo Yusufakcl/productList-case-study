@@ -1,0 +1,48 @@
+.color-selector {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+  
+  .color-options {
+    display: flex;
+    gap: 8px;
+  }
+  
+  .color-option {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 2px solid transparent;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    position: relative;
+  }
+  
+  .color-option:hover {
+    transform: scale(1.15);
+    border-color: #333;
+  }
+  
+  .color-option.selected {
+    border-color: #333;
+    box-shadow: 0 0 0 2px white, 0 0 0 4px #333;
+  }
+  
+.selected-color-name {
+    font-family: 'Avenir', -apple-system, BlinkMacSystemFont, sans-serif; /* Avenir Book */
+    font-size: 12px; /* Avenir Book 12 */
+    font-weight: 400;
+    color: #666;
+  }
+  
+  @media (max-width: 768px) {
+    .color-selector {
+      gap: 8px;
+    }
+  
+    .color-option {
+      width: 18px;
+      height: 18px;
+    }
+  }

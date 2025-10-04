@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "#services/*": ["src/services/*"],
+      "#routes/*": ["src/routes/*"],
+      "#data/*": ["src/data/*"]
+    },
+    "module": "ESNext",
+    "moduleResolution": "node",
+    "target": "ES2020"
+  },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules"]
+}
+
